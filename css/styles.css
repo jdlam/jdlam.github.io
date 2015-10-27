@@ -1,13 +1,3 @@
-/* Coolors Exported Palette - coolors.co/acedff-89bbfe-6f8ab7-f0eff4-1a181b */
-
-/*
-$color1: #acedff; //rgba(172, 237, 255, 100)
-$color2: #89bbfe; //rgba(137, 187, 254, 100)
-$color3: #6f8ab7; //rgba(111, 138, 183, 100)
-$color4: #f0eff4; //rgba(240, 239, 244, 100)
-$color5: #1a181b; //rgba(26, 24, 27, 100)
-*/
-
 /* General Stuff */
 
 * {
@@ -339,6 +329,13 @@ div#skills > div.content {
   div#skills > div.content {
     width: 100%;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div#skills > div.content {
+    width: 1000px;
+    margin: 0 auto;
   }
 }
 
