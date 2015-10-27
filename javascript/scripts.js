@@ -2,21 +2,18 @@ console.log('loaded');
 
 $(document).ready(function(){
 
-  bindNavButtons('#intro-btn', '#intro', false);
-  bindNavButtons('#ed-btn', '#education', false);
-  bindNavButtons('#exp-btn', '#experience', false);
-  bindNavButtons('#proj-btn', '#projects', false);
-  bindNavButtons('#skill-btn', '#skill-top', true);
+  bindNavButtons('#intro-btn', '#intro', 50);
+  bindNavButtons('#ed-btn', '#education', 0);
+  bindNavButtons('#exp-btn', '#experience', 50);
+  bindNavButtons('#proj-btn', '#projects', 125);
+  bindNavButtons('#skill-btn', '#skill-top', 75);
 
 })
 
 
-function bindNavButtons(button, div, test) {
-  var val;
-  if(test) {
-    val = 75;
-  } else {
-    val = 0;
+function bindNavButtons(button, div, val) {
+  if($(window).width() < 790 && div === '#projects') {
+    val -= 150;
   }
   $(button).click(function(){
     $('html, body').animate({
