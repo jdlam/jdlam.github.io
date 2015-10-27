@@ -45,10 +45,16 @@ div.navbar > a {
   color: white;
   font-style: normal;
   padding: 10px 8.5px;
+  height: 40px;
   cursor: pointer;
   -webkit-transition: 0.5s color, 0.5s text-shadow;
   -ms-transition: 0.5s color, 0.5s text-shadow;
   transition: 0.5s color, 0.5s text-shadow;
+}
+
+div.navbar > a:first-child {
+  padding: 0px 16px;
+  font-size: 1.85em;
 }
 
 div.navbar > a:hover {
