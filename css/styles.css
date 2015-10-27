@@ -31,11 +31,12 @@ body {
 /* Navbar */
 
 div.navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #696969;
+  z-index: 10;
 }
 
 div.navbar > a {
@@ -43,37 +44,57 @@ div.navbar > a {
   float: left;
   color: white;
   font-style: normal;
-  padding: 10px;
+  padding: 10px 8.5px;
   cursor: pointer;
   -webkit-transition: 0.5s color, 0.5s text-shadow;
+  -ms-transition: 0.5s color, 0.5s text-shadow;
+  transition: 0.5s color, 0.5s text-shadow;
 }
 
 div.navbar > a:hover {
-  color: red;
-  text-shadow: 2px 2px 8px black;
+  color: darkturquoise;
+  text-shadow: 0px 0px 8px gray;
 }
 
 /* Intro */
 
 div#intro {
+  position: relative;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
-div#intro a {
+div#intro > div.intro-content > a {
   color: white;
+  -webkit-transition: 0.5s color;
+  -ms-transition: 0.5s color;
+  transition: 0.5s color;
 }
 
-div#intro {
-  text-align: center;
-  vertical-align: middle;
+div#intro > div.intro-content > a:hover {
+  color: darkturquoise;
+  text-shadow: 0px 0px 8px gray;
 }
 
-div#intro > h1 {
+div.intro-content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+  -ms-transform: translateY(-70%);
+  transform: translateY(-70%);
+  width: 100%;
+  height: auto;
+}
+
+div#intro > div.intro-content > h1 {
   font-size: 5em;
 }
 
-@media and (max-width: 500) {
-  div#intro > h1 {
+@media screen and (max-width: 500px) {
+  div#intro > div.intro-content > h1 {
     font-size: 3em;
   }
 }
@@ -87,15 +108,48 @@ div.info {
   width: 100vw;
   height: 100vh;
   display: block;
+  text-align: right;
 }
 
 div.content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: auto;
   width: 80%;
-  margin-left: 10%;
-  text-align: right;
+  margin: 0 0 0 10%;
+}
+
+div.info:nth-child(even) {
+  text-align: left;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+svg {
+  position: relative;
+  max-width: 70%;
+  margin: 15%;
+}
+
+div#skills > div.content {
+  text-align: center;
+  width: 70%;
+  margin: 15%;
+}
+
+
+div.lang {
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 20%;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
 }

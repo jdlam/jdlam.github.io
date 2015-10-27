@@ -2,6 +2,7 @@ console.log('loaded');
 
 $(document).ready(function(){
 
+  bindNavButtons('#intro-btn', '#intro');
   bindNavButtons('#ed-btn', '#education');
   bindNavButtons('#exp-btn', '#experience');
   bindNavButtons('#proj-btn', '#projects');
