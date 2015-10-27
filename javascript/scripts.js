@@ -5,7 +5,7 @@ $(document).ready(function(){
   bindNavButtons('#intro-btn', '#intro', 50);
   bindNavButtons('#ed-btn', '#education', 0);
   bindNavButtons('#exp-btn', '#experience', 50);
-  bindNavButtons('#proj-btn', '#projects', 100);
+  bindNavButtons('#proj-btn', '#projects', 25);
   bindNavButtons('#skill-btn', '#skill-top', 75);
 
 })
@@ -13,9 +13,9 @@ $(document).ready(function(){
 
 function bindNavButtons(button, div, val) {
   if($(window).width() < 790 && div === '#projects') {
-    val -= 150;
-  } else if($(window).width() > 1000 && div === '#projects') {
-    val = 25;
+    val = -75;
+  } else if($(window).width() > 1200 && div === '#projects') {
+    val = 50;
   }
   $(button).click(function(){
     $('html, body').animate({

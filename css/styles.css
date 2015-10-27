@@ -256,7 +256,7 @@ div.work > ul {
 /* Projects */
 
 div#projects > div.content > h1 {
-  margin: 50px 0 -10px 0;
+  margin: 32.16px 0 -10px 0;
 }
 
 div.proj {
@@ -306,7 +306,7 @@ div.proj > a > img:hover {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1300px) {
   div#projects > div.content > h1 {
     margin: 32.16px auto;
   }
