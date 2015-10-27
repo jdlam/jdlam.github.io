@@ -145,6 +145,12 @@ div.info:nth-child(odd) {
   }
 }
 
+@media screen and (max-height: 400px) {
+  div.info {
+    height: 125vh;
+  }
+}
+
 /* Education */
 
 div#education > div.content {
@@ -174,13 +180,13 @@ div.logo > a > img {
 }
 
 div.school-info > p {
-  line-height: 0.8em;
+  line-height: 0.9em;
   margin: 5px;
 }
 
 div.school-info > p:first-child {
   font-size: 1.5em;
-  margin: 15px 0;
+  margin: 5px 0 15px 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -284,6 +290,19 @@ div.proj > a > img {
 
 div.proj > a > img:hover {
   box-shadow: 0px 0px 12px white;
+}
+
+div.proj > p > a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.5s color, 0.5s margin;
+  -ms-transition: 0.5s color, 0.5s margin;
+  transition: 0.5s color, 0.5s margin;
+}
+
+div.proj > p > a:hover {
+  color: darkturquoise;
+  text-shadow: 0px 0px 8px gray;
 }
 
 @media screen and (max-width: 790px) {
