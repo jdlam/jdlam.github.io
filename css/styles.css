@@ -306,6 +306,12 @@ div.proj > a > img:hover {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  div#projects > div.content > h1 {
+    margin: 32.16px auto;
+  }
+}
+
 /* Skills */
 
 svg {
