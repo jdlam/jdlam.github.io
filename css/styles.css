@@ -69,9 +69,9 @@ div#intro {
 
 div#intro > div.intro-content > a {
   color: white;
-  -webkit-transition: 0.5s color;
-  -ms-transition: 0.5s color;
-  transition: 0.5s color;
+  -webkit-transition: 0.5s color, 0.5s margin;
+  -ms-transition: 0.5s color, 0.5s margin;
+  transition: 0.5s color, 0.5s margin;
 }
 
 div#intro > div.intro-content > a:hover {
@@ -95,7 +95,11 @@ div#intro > div.intro-content > h1 {
 
 @media screen and (max-width: 500px) {
   div#intro > div.intro-content > h1 {
-    font-size: 3em;
+    font-size: 3.8em;
+  }
+  div#intro > div.intro-content > a {
+    color: white;
+    margin: 0 15px;
   }
 }
 
@@ -124,6 +128,7 @@ div.content {
 
 div.content > h1 {
   font-size: 3em;
+  text-align: center;
 }
 
 div.info:nth-child(odd) {
@@ -172,23 +177,65 @@ div.school-info > p:first-child {
 
 @media screen and (max-width: 500px) {
   div.logo {
-    width: 20%;
+    width: 30%;
   }
   div.school-info {
-    width: 70%;
+    width: 60%;
     word-wrap: normal;
   }
   div.logo > a > img {
-    width: 50px;
+    width: 100px;
     height: auto;
+  }
+  div.school-info > p {
+    margin: 0;
+    line-height: 1em;
   }
   div.school-info > p:first-child {
     font-size: 1.2em;
-    margin: 15px 0;
+    margin: 0 0 15px 0;
   }
 }
 
 /* Experience */
+
+div.work {
+  font-size: 1.2em;
+  display: inline-block;
+  width: 49%;
+  height: 150px;
+  vertical-align: text-top;
+  text-align: center;
+}
+
+div.work > span {
+  font-size: 0.75em;
+}
+
+div.work > ul {
+  list-style: none;
+  font-size: 0.75em;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 930px) and (min-width: 500px) {
+  div#experience > div.content {
+    width: 90%;
+    margin: 0 5%;
+  }
+  div.work {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.work {
+    width: 100%;
+    height: 75px;
+  }
+}
 
 /* Projects */
 
