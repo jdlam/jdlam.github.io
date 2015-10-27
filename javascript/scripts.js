@@ -5,7 +5,7 @@ $(document).ready(function(){
   bindNavButtons('#intro-btn', '#intro', 50);
   bindNavButtons('#ed-btn', '#education', 0);
   bindNavButtons('#exp-btn', '#experience', 50);
-  bindNavButtons('#proj-btn', '#projects', 25);
+  bindNavButtons('#proj-btn', '#projects', 125);
   bindNavButtons('#skill-btn', '#skill-top', 75);
 
 })
