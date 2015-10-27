@@ -119,17 +119,80 @@ div.content {
   transform: translateY(-50%);
   height: auto;
   width: 80%;
-  margin: 0 0 0 10%;
+  margin: 0 10%;
 }
 
-div.info:nth-child(even) {
+div.content > h1 {
+  font-size: 3em;
+}
+
+div.info:nth-child(odd) {
   text-align: left;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+@media screen and (max-width: 500px) {
+  div.content {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
+
+/* Education */
+
+div.school {
+  display: block;
+  margin: 25px 0;
+}
+
+div.logo, div.school-info {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+div.logo {
+  margin: auto;
+  height: 100%;
+}
+
+div.logo > a > img {
+  width: auto;
+  height: 100px;
+}
+
+div.school-info > p {
+  line-height: 0.8em;
+  margin: 5px;
+}
+
+div.school-info > p:first-child {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 500px) {
+  div.logo {
+    width: 20%;
+  }
+  div.school-info {
+    width: 70%;
+    word-wrap: normal;
+  }
+  div.logo > a > img {
+    width: 50px;
+    height: auto;
+  }
+  div.school-info > p:first-child {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+}
+
+/* Experience */
+
+/* Projects */
+
+/* Skills */
 
 svg {
   position: relative;
@@ -143,6 +206,15 @@ div#skills > div.content {
   margin: 15%;
 }
 
+@media screen and (max-width: 500px) {
+  div#skills {
+    height: 150vh;
+  }
+  div#skills > div.content {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 div.lang {
   position: relative;
@@ -152,4 +224,7 @@ div.lang {
   height: 100px;
   display: inline-block;
   text-align: center;
+  margin: 20px 5px;
 }
+
+/* Interests to be added back in at another date */
