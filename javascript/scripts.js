@@ -2,7 +2,7 @@ console.log('loaded');
 
 $(document).ready(function(){
 
-  bindNavButtons('#intro-btn', '#intro', 50);
+  bindBacktoTop();
   bindNavButtons('#ed-btn', '#education', 0);
   bindNavButtons('#exp-btn', '#experience', 50);
   bindNavButtons('#proj-btn', '#projects', 125);
@@ -10,6 +10,11 @@ $(document).ready(function(){
 
 })
 
+function bindBacktoTop() {
+  $('#intro-btn').click(function(){
+    $(document.body).animate({scrollTop: 0}, 800, 'easeOutCubic');
+  })
+}
 
 function bindNavButtons(button, div, val) {
   if($(window).width() < 790 && div === '#projects') {
