@@ -12,7 +12,9 @@ $(document).ready(function(){
 
 function bindBacktoTop() {
   $('#intro-btn').click(function(){
-    $(document.body).animate({scrollTop: 0}, 800, 'easeOutCubic');
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800, 'easeOutCubic');
   })
 }
 
