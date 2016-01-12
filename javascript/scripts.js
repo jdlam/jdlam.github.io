@@ -3,10 +3,10 @@ console.log('loaded');
 $(document).ready(function(){
 
   bindBacktoTop();
-  bindNavButtons('#ed-btn', '#education', 0);
-  bindNavButtons('#exp-btn', '#experience', 50);
-  bindNavButtons('#proj-btn', '#projects', 125);
-  bindNavButtons('#skill-btn', '#skill-top', 75);
+  bindNavButtons('#ed-btn', '#education');
+  bindNavButtons('#exp-btn', '#experience');
+  bindNavButtons('#proj-btn', '#projects');
+  bindNavButtons('#skill-btn', '#skills');
 
 })
 
@@ -18,15 +18,10 @@ function bindBacktoTop() {
   })
 }
 
-function bindNavButtons(button, div, val) {
-  if($(window).width() < 790 && div === '#projects') {
-    val = -75;
-  } else if($(window).width() > 1200 && div === '#projects') {
-    val = 50;
-  }
+function bindNavButtons(button, div) {
   $(button).click(function(){
     $('html, body').animate({
-      scrollTop: $(div).offset().top-val
+      scrollTop: $(div).offset().top
     }, 1000, 'easeOutCubic');
   });
 }
