@@ -373,6 +373,12 @@ div#skills > div.content {
   }
 }
 
+@media (max-width: 450px) and (min-height: 600px) {
+  div#skills > div.content {
+    align-content: flex-start;
+  }
+}
+
 div#skills > div.content > h1 {
   margin-top: 60px;
   margin-bottom: 20px;
