@@ -217,7 +217,7 @@ div.school-info > p:first-child {
   margin: -5px 0 5px 0;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   div#education > div.content > h1 {
     margin: 20px auto;
   }
@@ -346,12 +346,6 @@ div.proj > p > a:hover {
 
 div#skills {
   height: auto;
-}
-
-@media (min-height: 650px) {
-  div.content {
-    height: 100vh !important;
-  }
 }
 
 svg {
