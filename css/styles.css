@@ -251,7 +251,7 @@ div.work {
   word-wrap: normal;
   font-size: 20px;
 
-  -webkit-box-flex: 2 10%0%;
+  -webkit-box-flex: 2 100%;
   -moz-box-flex:  2 100%;
   flex: 2 100%;
 
@@ -283,6 +283,13 @@ div.work > ul > li:nth-child(2) {
 }
 
 /* Projects */
+
+@media (max-width: 900px) {
+  div#projects {
+    height: auto;
+    margin-bottom: 200px;
+  }
+}
 
 div.proj {
   position: relative;
