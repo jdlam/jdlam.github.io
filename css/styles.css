@@ -352,7 +352,7 @@ div#skills {
 
 @media (min-height: 650px) {
   div.content {
-    height: 100vh;
+    height: 100vh !important;
   }
 }
 
