@@ -297,6 +297,10 @@ div.proj {
   order: 2;
 }
 
+div#projects > div.content {
+  align-items: flex-start;
+}
+
 div#projects > div.content > h1 {
   margin: 60px auto 0 auto;
   -webkit-box-flex: 1 100%;
