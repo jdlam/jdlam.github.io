@@ -280,7 +280,6 @@ div.work > ul > li:nth-child(2) {
 /* Projects */
 
 div#projects {
-  width: 100vw;
   height: auto;
 }
 
@@ -346,7 +345,6 @@ div.proj > p > a:hover {
 /* Skills */
 
 div#skills {
-  width: 100vw;
   height: auto;
 }
 
