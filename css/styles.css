@@ -367,6 +367,7 @@ div#skills > div.content {
   height: auto;
   width: 70%;
   align-items: flex-start;
+  align-content: center;
   justify-content: center;
 }
 
