@@ -185,6 +185,7 @@ div#education > div.content {
 
 div.school {
   margin: 25px auto;
+  width: 370px;
 
   -webkit-box-ordinal-group: 2;
   -moz-box-ordinal-group: 2;
