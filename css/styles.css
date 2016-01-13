@@ -366,6 +366,7 @@ div#skills > div.content {
   text-align: center;
   height: auto;
   width: 70%;
+  align-items: flex-start;
 }
 
 @media (max-width: 400px) {
