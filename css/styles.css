@@ -145,9 +145,12 @@ div.content {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: flex-start;
 
   flex-wrap: wrap;
+
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
@@ -366,9 +369,6 @@ div#skills > div.content {
   text-align: center;
   height: auto;
   width: 70%;
-  align-items: flex-start;
-  align-content: center;
-  justify-content: center;
 }
 
 @media (max-width: 400px) {
