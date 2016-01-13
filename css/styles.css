@@ -284,10 +284,13 @@ div.work > ul > li:nth-child(2) {
 
 /* Projects */
 
+div#projects {
+  margin-bottom: 200px;
+}
+
 @media (max-width: 900px) {
   div#projects {
     height: auto;
-    margin-bottom: 200px;
   }
 }
 
