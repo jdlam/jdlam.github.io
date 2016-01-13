@@ -280,10 +280,6 @@ div.work > ul > li:nth-child(2) {
 
 /* Projects */
 
-div#projects {
-  height: auto;
-}
-
 div.proj {
   position: relative;
   width: 300px;
@@ -344,10 +340,6 @@ div.proj > p > a:hover {
 }
 
 /* Skills */
-
-div#skills {
-  height: auto;
-}
 
 svg {
   position: relative;
