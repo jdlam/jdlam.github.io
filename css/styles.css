@@ -17,6 +17,7 @@ html, body {
 body {
   background-image: url('../images/footer_lodyas.png');
   background-repeat: repeat;
+  overflow-x: hidden;
 }
 
 /* Navbar */
