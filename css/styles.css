@@ -10,8 +10,11 @@ html, body {
   font-size: 16px;
   line-height: 1.4;
   font-family: 'Didact Gothic', serif;
-  /*font-family: 'Kelly Slab', cursive;*/
   color: white;
+}
+
+h1 {
+  font-weight: 500;
 }
 
 body {
@@ -116,6 +119,9 @@ div#intro > div.intro-content > a {
     -ms-transition: 0.5s margin;
     transition: 0.5s margin;
   }
+  div.content > h1 {
+    font-size: 3.5em;
+  }
 }
 
 div#intro > div.intro-content > a:hover {
@@ -165,7 +171,7 @@ div.content {
 }
 
 div.content > h1 {
-  font-size: 3.5em;
+  font-size: 4em;
   margin-top: 0;
   text-align: center;
 
@@ -249,7 +255,7 @@ div.work {
   text-align: center;
   margin: 20px auto;
   word-wrap: normal;
-  font-size: 20px;
+  font-size: 14px;
 
   -webkit-box-flex: 2 100%;
   -moz-box-flex:  2 100%;
@@ -262,14 +268,13 @@ div.work {
 }
 
 div.work > span {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
 div.work > ul {
   list-style: none;
-  font-size: 0.65em;
   margin: 0;
   padding: 0;
 }
@@ -408,6 +413,16 @@ div.lang {
 
 div.lang:last-child {
   margin-bottom: 100px;
+}
+
+@media (max-width: 350px) {
+  div.school-info {
+    width: 300px;
+  }
+
+  div.proj > p {
+    width: 300px;
+  }
 }
 
 /* Interests to be added back in at another date */
