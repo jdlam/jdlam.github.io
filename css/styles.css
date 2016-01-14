@@ -170,9 +170,28 @@ div.content {
   }
 }
 
+@media (max-height: 500px) {
+  div#intro > div.intro-content > h1 {
+    margin: 42.88px auto 20px auto;
+  }
+  div.info {
+    height: auto;
+    margin: 20px 0 50px 0;
+  }
+  div.content {
+    height: auto;
+  }
+  div.content > h1 {
+    margin-top: 42.88px;
+    margin-bottom: 25px;
+  }
+  div.school {
+    margin: 10px auto !important;
+  }
+}
+
 div.content > h1 {
   font-size: 4em;
-  margin-top: 0;
   text-align: center;
 
   -webkit-box-ordinal-group: 1;
