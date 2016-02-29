@@ -314,8 +314,8 @@ div.work > ul > li:nth-child(2) {
 
 /* Projects */
 
-div#projects {
-  margin-bottom: 200px;
+div#projects.info {
+  height: auto;
 }
 
 @media (max-width: 900px) {
@@ -323,6 +323,7 @@ div#projects {
     height: auto;
   }
 }
+
 
 div.proj {
   position: relative;
