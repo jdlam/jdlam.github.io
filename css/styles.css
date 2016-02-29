@@ -306,6 +306,12 @@ div.work > ul > li:nth-child(2) {
   margin-bottom: 10px;
 }
 
+@media (max-width: 550px) {
+  div#experience > div.content > h1 {
+    margin: 30px auto 20px auto;
+  }
+}
+
 /* Projects */
 
 div#projects {
