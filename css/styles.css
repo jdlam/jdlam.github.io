@@ -141,6 +141,10 @@ div.info {
   display: inline-flex;
 }
 
+div#experience {
+  margin-bottom: 50px;
+}
+
 div.content {
   position: relative;
   height: auto;
